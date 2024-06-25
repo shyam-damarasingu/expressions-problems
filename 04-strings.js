@@ -7,19 +7,20 @@ Let's practice playing with strings in JavaScript!
 //    strings.
 let str1A = 'Hello'
 let str1B = 'World!'
-let expression1;
+let expression1 = `${str1A} ${str1B}`;
+
 
 console.log(expression1); //=> 'Hello World!'
 
 // 2. Set the value of expression2 to the first character of str2.
 let str2 = 'Hello';
-let expression2;
+let expression2 = str2[0];
 
 console.log(expression2); //=> 'H'
 
 // 3. Set the value of expression3 to the index of 'o' in str3.
 let str3 = 'Hello';
-let expression3;
+let expression3 = str3.indexOf("o");
 
 console.log(expression3); //=> 4
 
@@ -28,15 +29,16 @@ console.log(expression3); //=> 4
 //    you think expression4 will evaluate to.
 let expression4 = "Academy"[3];
 
-let predictExpression4;
+let predictExpression4 = 'd';
 
 // 5. Predict what the value of expression5 will be when printed
 //    to the console. Set predictExpression5 to the value that
 //    you think expression4 will evaluate to.
 let str5 = "BLUE";
 let expression5 = str5.length - str5.indexOf("U");
+console.log(expression5);
 
-let predictExpression5;
+let predictExpression5 = 2;
 
 // 6. Predict what the value of expression6 will be when printed
 //    to the console. Set predictExpression6 to the value that
@@ -44,8 +46,9 @@ let predictExpression5;
 let str6A = 'start';
 let str6B = 'end';
 let expression6 = str6A.length - str6B[-1];
+console.log(expression6);
 
-let predictExpression6;
+let predictExpression6 = NaN;
 
 
 /******************** DO NOT MODIFY ANY CODE BELOW THIS LINE *****************/
